@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Circle{
+- radious: double = 1.0
++ Circle()
++ Circle(radious:double)
++ getRadious():double
++ setRadious(radious:double):void
++ getArea():double
++ getCircumference():double
++ toString():String
+}
+@enduml
