@@ -1,4 +1,4 @@
-package claseCustomer;
+package claseClienteFactura;
 
 public class Invoice {
     private int id;

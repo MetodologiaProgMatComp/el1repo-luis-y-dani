@@ -26,13 +26,22 @@ public class MyPoint {
         this.y = y;
     }
     public int getXY()[2]{
+        return [x, y];
 
     }
     public void setXY(int x, int y){
-
+        this.
     }
     public String toString(){
         return "(" + x + "," + y + ")";
     }
+    public double distance(int x, int y) {
 
+    }
+    public double distance(MyPoint another) {
+
+    }
+    public double distance() {
+
+    }
 }
