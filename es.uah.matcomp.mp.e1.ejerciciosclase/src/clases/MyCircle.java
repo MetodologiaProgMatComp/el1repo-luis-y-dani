@@ -65,7 +65,9 @@ public class MyCircle {
         return 2 * Math.PI * radius;
     }
     public double distance(MyCircle another) {
-
+        this.center = another.center;
+        this.radius = another.radius;
+        return
     }
 
 }
