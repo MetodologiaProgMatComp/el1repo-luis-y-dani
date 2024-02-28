@@ -1,3 +1,7 @@
+package AuthorBook;
+
+import AuthorBook.Author;
+
 public class Book {
     private String isbn;
     private String name;
@@ -42,6 +46,6 @@ public class Book {
         return author.getName();
     }
     public String toString(){
-        return "Book[isbn="+isbn+", name="+name+"]"+author.toString()+",price="+price+", qty="+qty;
+        return "AuthorBook.Book[isbn="+isbn+", name="+name+"]"+author.toString()+",price="+price+", qty="+qty;
     }
 }

@@ -1,3 +1,5 @@
+package AuthorBook;
+
 public class Author {
     private String name;
     private String email;
@@ -16,6 +18,6 @@ public class Author {
         this.email=email;
     }
     public String toString(){
-        return "Author[name="+name+", email="+email+"]";
+        return "AuthorBook.Author[name="+name+", email="+email+"]";
     }
 }
