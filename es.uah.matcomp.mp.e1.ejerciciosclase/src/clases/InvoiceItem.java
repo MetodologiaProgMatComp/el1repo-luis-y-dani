@@ -1,3 +1,5 @@
+package clases;
+
 public class InvoiceItem {
     private int Qty;
     private double unitPrice;
@@ -7,7 +9,7 @@ public class InvoiceItem {
         unitPrice=up;
     }
     public String toString(){
-        return "InvoiceItem[id="+getId()+", desc="+getDesc()+", qty="+ Qty + ", unitPrice=" + unitPrice+"]";
+        return "clases.InvoiceItem[id="+getId()+", desc="+getDesc()+", qty="+ Qty + ", unitPrice=" + unitPrice+"]";
     }
     public int setQty(int Qty) {
         this.Qty=Qty;

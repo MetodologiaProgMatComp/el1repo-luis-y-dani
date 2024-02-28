@@ -1,3 +1,5 @@
+package clases;
+
 public class MyCircle {
     private MyPoint center;
     private int radius;
@@ -43,5 +45,5 @@ public class MyCircle {
     public void setCenterY(int y) {
         center.setY(y);
     }
-    public int
+
 }

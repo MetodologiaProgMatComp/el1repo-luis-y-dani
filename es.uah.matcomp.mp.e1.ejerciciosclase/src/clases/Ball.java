@@ -1,3 +1,5 @@
+package clases;
+
 public class Ball {
     private float x;
     private float y;
@@ -13,7 +15,7 @@ public class Ball {
         yDelta=xDelta1;
     }
     public String toString(){
-        return "Ball [("+x+","+y+"), speed=("+xDelta+","+yDelta+")]";
+        return "clases.Ball [("+x+","+y+"), speed=("+xDelta+","+yDelta+")]";
     }
     public float setX(float x) {
         this.x = x;

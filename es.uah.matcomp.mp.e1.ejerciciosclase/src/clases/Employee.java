@@ -1,3 +1,5 @@
+package clases;
+
 public class Employee {
     private int id;
     private String firstName;
@@ -45,6 +47,6 @@ public class Employee {
         return (int) (salary + (salary * salaryWithPercent));
     }
     public String toString(){
-        return "Employee[id=" + id + ",name=" + firstName + " " + lastName + ", salary=" + salary + "]";
+        return "clases.Employee[id=" + id + ",name=" + firstName + " " + lastName + ", salary=" + salary + "]";
     }
 }

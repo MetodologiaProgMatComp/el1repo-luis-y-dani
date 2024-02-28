@@ -1,3 +1,5 @@
+package clases;
+
 public class Rectangle {
     private float Length;
     private float Width;
@@ -13,7 +15,7 @@ public class Rectangle {
         Width = 1.0f;
     }
     public String toString() {
-        return "Rectangle[Length = "+ Length+", Width ="+ Width+"]";
+        return "clases.Rectangle[Length = "+ Length+", Width ="+ Width+"]";
     }
     public void setLength(float Length) {
         this.Length = Length;

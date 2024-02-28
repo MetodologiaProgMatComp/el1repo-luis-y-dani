@@ -1,4 +1,4 @@
-package claseClienteFactura;
+package clases.claseClienteFactura;
 
 public class Customer {
     private int id;

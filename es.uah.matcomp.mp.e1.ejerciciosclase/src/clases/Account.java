@@ -1,3 +1,5 @@
+package clases;
+
 public class Account {
     private String id;
     private String name;
@@ -48,7 +50,7 @@ public class Account {
         return balance;
     }
     public String toString() {
-        return "Account[id="+ id + ",name=" + name + ",balance=" + balance + "]";
+        return "clases.Account[id="+ id + ",name=" + name + ",balance=" + balance + "]";
         }
 }
 

@@ -1,9 +1,7 @@
-package AuthorBook;
+import clases.AuthorBook.Author;
+import clases.AuthorBook.Book;
 
-import AuthorBook.Author;
-import AuthorBook.Book;
-
-public class TestMain {
+public class MainAuthor {
     public static void main(String[] args) {
         // Test AuthorBook.Author class
         Author a1 = new Author("Tan Ah Teck", "ahteck@nowhere.com");

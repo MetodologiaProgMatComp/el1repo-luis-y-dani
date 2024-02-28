@@ -1,6 +1,6 @@
-package AuthorBook;
+package clases.AuthorBook;
 
-import AuthorBook.Author;
+import clases.AuthorBook.Author;
 
 public class Book {
     private String isbn;

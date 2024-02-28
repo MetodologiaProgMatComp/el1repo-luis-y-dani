@@ -1,3 +1,5 @@
+package clases;
+
 import static java.lang.Math.PI;
 
 public class Circle {
@@ -29,7 +31,7 @@ public class Circle {
     }
 
     public String toString() {
-        return "Circle[radious=" + radious + "]";
+        return "clases.Circle[radious=" + radious + "]";
     }
 
 

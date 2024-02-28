@@ -1,4 +1,4 @@
-package AuthorBook;
+package clases.AuthorBook;
 
 public class Author {
     private String name;
