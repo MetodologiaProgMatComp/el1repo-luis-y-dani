@@ -3,8 +3,8 @@ public class Author {
     private String email;
 
     public Author(String n, String e) {
-    name = n;
-    email = e;
+        name = n;
+        email = e;
     }
     public String getName() {
         return name;
