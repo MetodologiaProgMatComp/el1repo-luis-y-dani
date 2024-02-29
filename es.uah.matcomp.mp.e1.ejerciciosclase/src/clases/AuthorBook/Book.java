@@ -46,6 +46,6 @@ public class Book {
         return author.getName();
     }
     public String toString(){
-        return "AuthorBook.Book[isbn="+isbn+", name="+name+"]"+author.toString()+",price="+price+", qty="+qty;
+        return "Book[isbn="+isbn+", name="+name+"]"+author.toString()+",price="+price+", qty="+qty;
     }
 }

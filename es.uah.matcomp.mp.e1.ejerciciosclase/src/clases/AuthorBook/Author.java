@@ -18,6 +18,6 @@ public class Author {
         this.email=email;
     }
     public String toString(){
-        return "AuthorBook.Author[name="+name+", email="+email+"]";
+        return "Author[name="+name+", email="+email+"]";
     }
 }
