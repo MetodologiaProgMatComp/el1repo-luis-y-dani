@@ -32,8 +32,15 @@ public class Account {
         return customer.getName();
     }
     public Account Deposit(double amount){
-        return amount;
+        balance += amount;
     }
+    public Account Withdraw(double amount){
+        if (balance <= amount){
+            balance = balance - amount;
+        }
+        else{
+            System.out.print("Amount withdrawn exceeds the current balance!");
 
-
+        }
+    }
 }
