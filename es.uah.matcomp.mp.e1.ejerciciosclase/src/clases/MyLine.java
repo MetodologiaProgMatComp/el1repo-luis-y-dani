@@ -1,12 +1,13 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.src.clases;
 
-import es.uah.matcomp.mp.e1.ejerciciosclase.src.clases.MyPoint;
 
 public class MyLine {
     private MyPoint begin;
     private MyPoint end;
 
     public MyLine(int x1, int y1, int x2, int y2) {
+        begin = new MyPoint(x1, y1);
+        end = new MyPoint(x2, y2);
     }
 
     public MyLine(MyPoint begin, MyPoint end) {
@@ -30,55 +31,56 @@ public class MyLine {
         this.end = end;
     }
     public int getBeginX(){
+        return begin.getX();
     }
     public void setBeginX(int x){
-        this.x = x1;
+        begin.setX(x);
     }
     public int getBeginY(){
-
+        return begin.getY();
     }
     public void setBeginY(int y){
-        this.y = y1;
+        begin.setY(y);
     }
     public int getEndX(){
-        return
+        return end.getX();
     }
     public void setEndX(int x){
-        this.x = x2;
+        end.setX(x);
     }
     public int getEndY(){
-
+        return end.getY();
     }
     public void setEndY(int y){
-        this.y = y2;
+        end.setY(y);
     }
-    public int getBeginXY(){
-        int[] BeginXY = new int[2];
-        BeginXY[0] = x1;
-        BeginXY[1] = y1;
+    public int[] getBeginXY(){
+        int[] beginxy = new int[2];
+        beginxy[0] = begin.getX();
+        beginxy[1] = begin.getY();
         return beginxy;
     }
     public void setBeginXY(int x, int y){
-        this.x = x1;
-        this.y = y1;
+        begin.setX(x);
+        begin.setY(y);
     }
-    public int getEndXY(){
-        int[] EndXY = new int[2];
-        EndXY[0] = x2;
-        EndXY[1] = y2;
+    public int[] getEndXY(){
+        int[] endxy = new int[2];
+        endxy[0] = end.getX();
+        endxy[1] = end.getY();
         return endxy;
     }
     public void setEndXY(int x, int y){
-        this.x = x2;
-        this.y = y2;
+        end.setX(x);
+        end.setY(y);
     }
     public double getLength(){
-        return myPoint.distance();
+        return begin.distance();
     }
     public double getGradient(){
-        return Math.atan2(yDiff, xDiff);
+        return Math.atan2(getEndY()-getBeginY(), getEndX()-getEndY());
     }
     public String toString(){
-        return "MyLine[begin=("+x1+","+y1+"), end=("+x2+","+y2+")]";
+        return "MyLine[begin=("+begin+"), end=("+end+")]";
     }
 }

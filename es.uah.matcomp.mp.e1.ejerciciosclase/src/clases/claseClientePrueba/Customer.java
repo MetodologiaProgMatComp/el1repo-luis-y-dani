@@ -3,7 +3,7 @@ package es.uah.matcomp.mp.e1.ejerciciosclase.src.clases.claseClientePrueba;
 public class Customer {
     private int id;
     private String name;
-    private char gender = 'm' | 'f';
+    private char gender = 'f' | 'm';
     public Customer(int i, String n, char g){
         this.id = i;
         this.name = n;

@@ -1,4 +1,4 @@
-package clases;
+package es.uah.matcomp.mp.e1.ejerciciosclase.src.clases;
 
 public class MyCircle {
     private MyPoint center;
