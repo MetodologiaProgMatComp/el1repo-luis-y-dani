@@ -1,5 +1,5 @@
-package clases;
-
+package es.uah.matcomp.mp.e1.ejerciciosclase.src.clases;
+import clases.MyPoint;
 
 public class MyLine {
     private MyPoint begin;
