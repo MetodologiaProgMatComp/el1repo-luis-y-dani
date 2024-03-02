@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclase.src.clases.claseMyLineMyPoint;
+package es.uah.matcomp.mp.e1.ejerciciosclase.src.clases;
 
 public class MyPoint {
     private int x = 0;
