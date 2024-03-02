@@ -23,7 +23,6 @@ public class InvoiceItem {
 
     public String getId() {
         return "A101";
-
     }
 
     public String getDesc() {

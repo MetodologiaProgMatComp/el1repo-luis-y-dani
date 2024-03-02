@@ -1,5 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclase.src.clases.claseClientePrueba;
-
+import clases.claseClientePrueba.*;
 public class MainClientePrueba {
     public static void main(String[] args) {
         //Test de Customer class

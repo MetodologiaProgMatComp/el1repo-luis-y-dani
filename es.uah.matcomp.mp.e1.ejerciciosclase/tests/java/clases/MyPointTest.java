@@ -35,9 +35,7 @@ class MyPointTest {
     @Test
     void getXY() {
         MyPoint s = new MyPoint(3, 4);
-        assertEquals(3, s.getX(), 3);
-        assertEquals(4, s.getY(), 4);
-        assertEquals((3,4), s.getXY(),"Estas no son las coordenadas que esperaba");
+        assertEquals(34, s.getXY(),"Estas no son las coordenadas que esperaba");
     }
 
     @Test
@@ -51,24 +49,27 @@ class MyPointTest {
     @Test
     void testToString() {
         MyPoint s = new MyPoint(3, 4);
-        assertEquals("(0,0)", s.toString(), "Esta no era la salida por pantalla que se esperaba");
+        assertEquals("(3,4)", s.toString(), "Esta no era la salida por pantalla que se esperaba");
     }
 
     @Test
     void distance() {
         MyPoint s = new MyPoint(3, 4);
-
-        assertEquals()
+        assertDoesNotThrow(()-> s.setXY(3, 4));
+        assertEquals(5, s.distance(3, 4), "Esta no era la distancia que esperaba encontrar");
     }
 
     @Test
     void testDistance() {
         MyPoint s = new MyPoint(3, 4);
+        assertDoesNotThrow(()-> s.setXY(3, 4));
+        assertEquals(5, s.distance(s), "Esta no era la distancia que esperaba encontrar");
     }
 
     @Test
     void testDistance1() {
         MyPoint s = new MyPoint(3, 4);
-
+        assertDoesNotThrow(()-> s.setXY(3, 4));
+        assertEquals(5, s.distance(), "Esta no era la distancia que esperaba encontrar");
     }
 }

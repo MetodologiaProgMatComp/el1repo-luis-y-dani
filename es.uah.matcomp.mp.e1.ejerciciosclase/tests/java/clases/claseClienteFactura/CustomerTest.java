@@ -27,8 +27,8 @@ class CustomerTest {
     @org.junit.jupiter.api.Test
     void setDiscount() {
         Customer a = new Customer(2, "Dani", 50);
-        assertDoesNotThrow(()-> a.getDiscount());
-        assertEquals(50, a.setDiscount(50), 50);
+        assertDoesNotThrow(()-> a.setDiscount(50));
+        assertEquals(50, a.getDiscount(), "Este no era el descuento que esperaba");
     }
 
     @org.junit.jupiter.api.Test

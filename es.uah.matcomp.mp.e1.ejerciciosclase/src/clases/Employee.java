@@ -47,6 +47,6 @@ public class Employee {
         return (int) (salary + (salary * salaryWithPercent));
     }
     public String toString(){
-        return "clases.Employee[id=" + id + ",name=" + firstName + " " + lastName + ", salary=" + salary + "]";
+        return "Employee[id=" + id + ",name=" + firstName + " " + lastName + ", salary=" + salary + "]";
     }
 }

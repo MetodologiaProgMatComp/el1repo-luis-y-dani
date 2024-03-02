@@ -26,9 +26,7 @@ class InvoiceTest {
     void setCustomer() {
         Customer a = new Customer(2, "Dani", 4);
         Invoice e = new Invoice(5, a, 4.9);
-        assertDoesNotThrow(()-> e.getCustomerId());
-        assertDoesNotThrow(()-> e.getCustomerName());
-        assertDoesNotThrow(()-> e.getCustomerDiscount());
+        assertDoesNotThrow(()-> e.setCustomer(a));
         assertEquals(2, e.getCustomerId(), 2);
         assertEquals("Dani", e.getCustomerName(), "Este no era el nombre que se esperaba");
         assertEquals(4, e.getCustomerDiscount(), 4);
@@ -46,7 +44,7 @@ class InvoiceTest {
     void setAmount() {
         Customer a = new Customer(2, "Dani", 4);
         Invoice e = new Invoice(5, a, 4.9);
-        assertDoesNotThrow(()-> e.getAmount());
+        assertDoesNotThrow(()-> e.setAmount(4.9));
         assertEquals(4.9, e.getAmount(), 4.9);
     }
 

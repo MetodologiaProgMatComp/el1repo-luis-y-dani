@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclase.src.clases.claseClientePrueba;
+package clases.claseClientePrueba;
 
 public class Customer {
     private int id;

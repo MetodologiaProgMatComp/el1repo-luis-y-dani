@@ -15,9 +15,9 @@ public class MainMyPoint {
         MyPoint p2 = new MyPoint(0, 4);  // Test another constructor
         System.out.println(p2);
         // Testing the overloaded methods distance()
-        System.out.println(p1.distance(p2));    // which version?
-        System.out.println(p2.distance(p1));    // which version?
-        System.out.println(p1.distance(5, 6));  // which version?
-        System.out.println(p1.distance());      // which version?
+        System.out.println(p1.distance(p2));    // distance(MyPoint p2)
+        System.out.println(p2.distance(p1));    // distance(MyPoint p1)
+        System.out.println(p1.distance(5, 6));  // distance(x=5, y=6)
+        System.out.println(p1.distance());      // distance()
     }
 }

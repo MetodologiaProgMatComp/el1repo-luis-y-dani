@@ -46,14 +46,19 @@ class EmployeeTest {
     @org.junit.jupiter.api.Test
     void getAnnualSalary() {
         Employee e = new Employee(4, "Dani", "Luque", 1000);
-
+        assertEquals(12000, e.getAnnualSalary(), 12000);
     }
 
     @org.junit.jupiter.api.Test
     void raiseSalary() {
+        Employee e = new Employee(4, "Dani", "Luque", 1000);
+        assertDoesNotThrow(()-> e.raiseSalary(10));
+        assertEquals(100, e.raiseSalary(10), "Este no era el salario que esperaba");
     }
 
     @org.junit.jupiter.api.Test
     void testToString() {
+        Employee e = new Employee(4, "Dani", "Luque", 1000);
+        assertEquals("Employee[id=4,name=Dani Luque,salary=1000]", e.toString(), "Esto no era el strign que esperaba");
     }
 }
