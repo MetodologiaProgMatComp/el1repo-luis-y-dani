@@ -1,4 +1,4 @@
-import es.uah.matcomp.mp.e1.ejerciciosclase.src.clases.MyPoint;
+import clases.MyPoint;
 public class MainMyPoint {
     public static void main(String[] args) {
         // Test program to test all constructors and public methods
