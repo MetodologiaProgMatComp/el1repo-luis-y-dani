@@ -18,17 +18,17 @@ public class MyTriangle {
         return "MyTriangle[v1=("+v1+"), v2=("+v2+"), v3=("+v3+")]";
     }
     public double getPerimeter(){
-        return v1.distance() + v2.distance() + v3.distance();
+        return v1.distance(v2) + v2.distance(v3) + v3.distance(v1);
     }
     public String getType(){
-        if (v1.distance() == v2.distance()){
-            if (v1.distance()==v3.distance()){
+        if (v1.distance(v2) == v2.distance(v3)){
+            if (v1.distance(v2)==v3.distance(v1)){
             return "Equilateral";
                 } else{
                 return "Isosceles";
             }
         }
-        if (v2.distance() == v3. distance()){
+        if (v2.distance(v3) == v3. distance(v1)){
                 return "Isosceles";
             }
         else {
