@@ -15,6 +15,6 @@ public class Dog extends Mammal{
     @Override
 
     public String toString() {
-        return "Dog[Mammal[Animal[name=" +  + "]]]";
+        return "Dog[Mammal[Animal[name=" + getName() + "]]]";
     }
 }
