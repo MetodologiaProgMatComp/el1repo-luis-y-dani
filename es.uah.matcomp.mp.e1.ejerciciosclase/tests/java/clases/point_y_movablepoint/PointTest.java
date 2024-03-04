@@ -35,14 +35,22 @@ class PointTest {
     @Test
     void getXY() {
         Point a = new Point(34, 54);
-        assertEquals(3454, a.getXY(), 3454);
+        assertDoesNotThrow(()-> a.getXY());
+        assertEquals(34, a.getX(), 34);
+        assertEquals(54, a.getY(), 54);
     }
 
     @Test
     void setXY() {
+        Point a = new Point(34, 54);
+        assertDoesNotThrow(()-> a.setXY(34, 54));
+        assertEquals(34, a.getX(), "Esta no es la coordenada X que esperaba");
+        assertEquals(54, a.getY(), "Esta no es la coordenada Y que esperaba");
     }
 
     @Test
     void testToString() {
+        Point a = new Point(34, 54);
+        assertEquals("(34,54)", a.toString(), "Este texto no era el que esperaba");
     }
 }
