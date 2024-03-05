@@ -19,6 +19,6 @@ public class Customer {
         return gender;
     }
     public String toString(){
-        return "name("+id+")";
+        return name + "("+id+")";
     }
 }
