@@ -38,7 +38,7 @@ public class RectangleTest {
         Rectangle rectangle = new Rectangle(1.0f, 2.0f);
         assertEquals(rectangle.getArea(), 2.0f);
         assertTrue(rectangle.getArea()>0);
-        assertDoeNotThrow(() -> rectangle.getArea());
+        assertDoesNotThrow(() -> rectangle.getArea());
     }
     @Test
     void getPerimeter(){

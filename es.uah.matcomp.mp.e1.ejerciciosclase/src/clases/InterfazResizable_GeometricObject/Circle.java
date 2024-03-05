@@ -1,6 +1,6 @@
-package es.uah.matcomp.mp.e1.ejerciciosclase.src.clases.InterfazResizable_GeometricObject;
+package clases.InterfazResizable_GeometricObject.*;
 
-public class Circle implements GeometricObject{
+public class Circle implements es.uah.matcomp.mp.e1.ejerciciosclase.src.clases.InterfazResizable_GeometricObject.GeometricObject {
     protected double radius;
     public Circle(double radius){
         this.radius = radius;

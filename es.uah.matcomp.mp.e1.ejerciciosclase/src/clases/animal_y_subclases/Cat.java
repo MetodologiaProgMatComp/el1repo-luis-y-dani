@@ -1,5 +1,6 @@
 package clases.animal_y_subclases;
 
+// public class Cat extends AbstractAnimal{}
 public class Cat extends Mammal{
     public Cat(String name) {
         super(name);

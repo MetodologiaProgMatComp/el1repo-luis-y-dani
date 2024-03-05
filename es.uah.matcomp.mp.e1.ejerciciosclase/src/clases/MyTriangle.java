@@ -1,5 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclase.src.clases;
-import clases.MyPoint;
+package clases;
 public class MyTriangle {
     private MyPoint v1;
     private MyPoint v2;

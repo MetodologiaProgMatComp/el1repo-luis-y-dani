@@ -1,4 +1,5 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.tests.java.clases;
+import clases.InvoiceItem;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -6,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 public class InvoiceItemTest {
     @Test
     void getId() {
-        InvoiceItem a = new clases.InvoiceItem("B000", "penBlue", 1, 2);
-        assertEquals("A", a.getID());
+        InvoiceItem a = new InvoiceItem("B000", "penBlue", 1, 2);
+        assertEquals("A", a.getId());
     }
     @Test
     void getDesc(){
