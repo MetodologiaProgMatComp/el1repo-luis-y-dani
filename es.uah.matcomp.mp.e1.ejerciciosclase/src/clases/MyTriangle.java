@@ -1,4 +1,5 @@
 package clases;
+import clases.MyPoint;
 public class MyTriangle {
     private MyPoint v1;
     private MyPoint v2;
