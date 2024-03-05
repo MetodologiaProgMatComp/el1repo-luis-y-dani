@@ -2,7 +2,7 @@ package es.uah.matcomp.mp.e1.ejerciciosclase.src.clases.SuperclaseAbstractaShape
 
 import static java.lang.Math.PI;
 
-abstract class Circle extends Shape {
+public class Circle extends Shape {
     protected double radius;
     public Circle(){
         this.radius = 1.0;
