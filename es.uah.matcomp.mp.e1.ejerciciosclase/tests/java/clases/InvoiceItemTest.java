@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclase.tests.java.clases;
+package java.clases;
 import clases.InvoiceItem;
 import org.junit.jupiter.api.Test;
 
