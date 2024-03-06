@@ -1,7 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclase.src;
-
-import clases.Circle;
-import es.uah.matcomp.mp.e1.ejerciciosclase.src.clases.Circle_Cylinder.Cylinder;
+package clases.Circle_Cylinder;
 
 public class MainCylinder {
         public static void main (String[] args) {
