@@ -1,4 +1,4 @@
-package clases.point_y_movablepoint;
+package Cuaderno3.Ejercicio4.point_y_movablepoint;
 
 import Cuaderno3.Ejercicio4.point_y_movablepoint.Point;
 import org.junit.jupiter.api.Test;
@@ -9,8 +9,8 @@ class PointTest {
 
     @Test
     void getX() {
-        Point a = new Point(34, 54);
-        assertEquals(34, a.getX(), 34);
+        Point a = new Point();
+        assertEquals(0, a.getX(), 0);
     }
 
     @Test
@@ -52,6 +52,6 @@ class PointTest {
     @Test
     void testToString() {
         Point a = new Point(34, 54);
-        assertEquals("(34,54)", a.toString(), "Este texto no era el que esperaba");
+        assertEquals("(34.0,54.0)", a.toString(), "Este texto no era el que esperaba");
     }
 }

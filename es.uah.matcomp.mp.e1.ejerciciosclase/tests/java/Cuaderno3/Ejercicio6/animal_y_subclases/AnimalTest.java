@@ -1,4 +1,4 @@
-package Cuaderno3.animal_y_subclases;
+package Cuaderno3.Ejercicio6.animal_y_subclases;
 
 import Cuaderno3.Ejercicio6.animal_y_subclases.Animal;
 import org.junit.jupiter.api.Test;
@@ -10,7 +10,7 @@ class AnimalTest {
     @Test
     void getName() {
         Animal a = new Animal("Daisy");
-        assertEquals("Dani", a.getName(), "Este no es el nombre que esperaba");
+        assertEquals("Daisy", a.getName(), "Este no es el nombre que esperaba");
     }
 
     @Test

@@ -1,4 +1,4 @@
-package Cuaderno4.Ejercicio2.Interfaz_GeometricObject;
+package Cuaderno4;
 
 public interface GeometricObject {
     public double getArea();

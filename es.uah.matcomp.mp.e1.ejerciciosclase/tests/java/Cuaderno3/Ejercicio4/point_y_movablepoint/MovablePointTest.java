@@ -1,4 +1,4 @@
-package clases.point_y_movablepoint;
+package Cuaderno3.Ejercicio4.point_y_movablepoint;
 
 import Cuaderno3.Ejercicio4.point_y_movablepoint.MovablePoint;
 import org.junit.jupiter.api.Test;
@@ -9,8 +9,8 @@ class MovablePointTest {
 
     @Test
     void getxSpeed() {
-        MovablePoint a = new MovablePoint(23, 46);
-        assertEquals(23, a.getxSpeed(), 23);
+        MovablePoint a = new MovablePoint();
+        assertEquals(0, a.getxSpeed(), 0);
     }
 
     @Test
@@ -52,7 +52,7 @@ class MovablePointTest {
     @Test
     void testToString() {
         MovablePoint a = new MovablePoint(34, 54, 23, 46);
-        assertEquals("(34,54),speed=(23,46)", a.toString(), "Este no es el texto que esperaba");
+        assertEquals("(34.0,54.0),speed=(23.0,46.0)", a.toString(), "Este no es el texto que esperaba");
     }
 
     @Test
