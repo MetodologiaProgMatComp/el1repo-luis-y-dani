@@ -82,6 +82,6 @@ public class MyLine {
         return Math.atan2(getEndY()-getBeginY(), getEndX()-getEndY());
     }
     public String toString(){
-        return "MyLine[begin=("+begin+"), end=("+end+")]";
+        return "MyLine[begin=("+begin+"),end=("+end+")]";
     }
 }
