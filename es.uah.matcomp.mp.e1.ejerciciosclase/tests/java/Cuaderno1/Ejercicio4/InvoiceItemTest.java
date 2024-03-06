@@ -7,13 +7,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class InvoiceItemTest {
     @Test
     void getId() {
-        InvoiceItem a = new InvoiceItem("B000", "penBlue", 1, 2);
-        assertEquals("A", a.getId());
+        InvoiceItem a = new InvoiceItem("A101", "penBlue", 1, 2);
+        assertEquals("A101", a.getId());
     }
     @Test
     void getDesc(){
-        InvoiceItem a = new InvoiceItem("B000", "penBlue", 1, 2);
-        assertEquals("penBlue", a.getDesc());
+        InvoiceItem a = new InvoiceItem("B000", "Pen Red", 1, 2);
+        assertEquals("Pen Red", a.getDesc());
     }
     @Test
     void getQty(){
@@ -27,10 +27,10 @@ class InvoiceItemTest {
     }
     @Test
     void setQty() {
-        InvoiceItem a = new InvoiceItem("B000", "penBlue", 1, 2);
+        InvoiceItem a = new InvoiceItem("B000", "penBlue", 10, 2);
         assertDoesNotThrow(() -> a.setQty(10));
         int b = a.getQty();
-        assertEquals(20, b);
+        assertEquals(10, b);
     }
     @Test
     void setUnitPrice(){
@@ -43,11 +43,11 @@ class InvoiceItemTest {
     void getTotal(){
         InvoiceItem a = new InvoiceItem("B000", "penBlue", 1, 2);
         double b = a.getTotal();
-        assertEquals(4, b);
+        assertEquals(2.0, b);
     }
     void testToString(){
-        InvoiceItem a = new InvoiceItem("B000", "penBlue", 1, 2);
-        assertEquals("InvoiceItem[ID=B000, desc=penBlue, qty=1, unitPrice=2]", a.toString());
+        InvoiceItem a = new InvoiceItem("A101", "Pen Red", 10, 2.0);
+        assertEquals("InvoiceItem[id=A101,desc=Pen Red,qty=10,unitPrice=2.0]", a.toString());
     }
 
 }

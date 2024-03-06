@@ -15,7 +15,7 @@ public class Rectangle {
         Width = 1.0f;
     }
     public String toString() {
-        return "Rectangle[Length = "+ Length+", Width ="+ Width+"]";
+        return "Rectangle[length="+ Length+",width="+ Width+"]";
     }
     public void setLength(float Length) {
         this.Length = Length;

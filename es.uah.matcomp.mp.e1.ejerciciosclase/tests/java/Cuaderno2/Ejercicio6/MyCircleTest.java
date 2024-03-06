@@ -8,17 +8,15 @@ import static org.junit.jupiter.api.Assertions.*;
 class MyCircleTest {
     @Test
     void getRadius() {
-        MyPoint e = new MyPoint(3, 4);
-        MyCircle a = new MyCircle(e, 2);
+        MyCircle a = new MyCircle(3, 4, 2);
         assertEquals(2, a.getRadius(), 2);
     }
 
     @Test
     void setRadius() {
-        MyPoint e = new MyPoint(3, 4);
-        MyCircle a = new MyCircle(e, 2);
-        assertDoesNotThrow(() -> a.setRadius(2));
-        assertEquals(2, a.getRadius(), "Estos no son los radianes que esperaba");
+        MyCircle a = new MyCircle();
+        assertDoesNotThrow(() -> a.setRadius(1));
+        assertEquals(1, a.getRadius(), "Estos no son los radianes que esperaba");
     }
 
     @Test
@@ -70,7 +68,9 @@ class MyCircleTest {
     void getCenterXY() {
         MyPoint e = new MyPoint(3, 4);
         MyCircle a = new MyCircle(e, 2);
-        assertEquals(34, a.getCenterXY(), "Estas no son las coordenadas del centro que esperaba");
+        assertDoesNotThrow(() -> a.getCenterXY());
+        assertEquals(3, a.getCenterX(), "Esta no es la coordenada del centro X que esperaba");
+        assertEquals(4, a.getCenterY(), "Esta no es la coordenada del centro Y que esperaba");
     }
 
     @Test
@@ -78,14 +78,15 @@ class MyCircleTest {
         MyPoint e = new MyPoint(3, 4);
         MyCircle a = new MyCircle(e, 2);
         assertDoesNotThrow(() -> a.setCenterXY(3, 4));
-        assertEquals(34, a.getCenterXY(), "Estas no son las coordenadas del centro que esperaba");
+        assertEquals(3, a.getCenterX(), "Esta no es la coordenada del centro X que esperaba");
+        assertEquals(4, a.getCenterY(), "Esta no es la coordenada del centro Y que esperaba");
     }
 
     @Test
     void testToString() {
         MyPoint e = new MyPoint(3, 4);
         MyCircle a = new MyCircle(e, 2);
-        assertEquals("MyCircle[radius=2, center=(3,4)]", a.toString(), "Este no es el mensaje que esperaba");
+        assertEquals("MyCircle[radius=2,center=(3,4)]", a.toString(), "Este no es el mensaje que esperaba");
     }
 
     @Test
@@ -106,7 +107,8 @@ class MyCircleTest {
     void distance() {
         MyPoint e = new MyPoint(3, 4);
         MyCircle a = new MyCircle(e, 2);
-        // terminar
-
+        MyCircle c = new MyCircle(3, 4, 2);
+        assertDoesNotThrow(()-> a.setCenterXY(3, 4));
+        assertEquals(5, a.distance(c), "Esta no era la distancia que esperaba encontrar");
     }
 }

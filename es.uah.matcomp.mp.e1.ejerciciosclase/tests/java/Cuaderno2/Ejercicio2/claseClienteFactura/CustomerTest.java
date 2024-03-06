@@ -1,4 +1,4 @@
-package clases.claseClienteFactura;
+package Cuaderno2.Ejercicio2.claseClienteFactura;
 
 import Cuaderno2.Ejercicio2.claseClienteFactura.Customer;
 

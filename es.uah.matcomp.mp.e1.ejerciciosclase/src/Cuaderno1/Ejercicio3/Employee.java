@@ -44,9 +44,9 @@ public class Employee {
     public int raiseSalary(int percent){
         this.salaryWithPercent = salaryWithPercent;
         salaryWithPercent = (double) percent/100;
-        return (int) (salary + (salary * salaryWithPercent));
+        return salary = (int) (salary + (salary * salaryWithPercent));
     }
     public String toString(){
-        return "Employee[id=" + id + ",name=" + firstName + " " + lastName + ", salary=" + salary + "]";
+        return "Employee[id=" + id + ",name=" + firstName + " " + lastName + ",salary=" + salary + "]";
     }
 }

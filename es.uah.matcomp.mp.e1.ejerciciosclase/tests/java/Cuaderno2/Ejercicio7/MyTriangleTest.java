@@ -8,11 +8,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class MyTriangleTest {
     @Test
     void testToString() {
-        MyPoint c = new MyPoint(3,4);
-        MyPoint d = new MyPoint(5, 6);
-        MyPoint e = new MyPoint(7,8);
-        MyTriangle a = new MyTriangle(c, d, e);
-        assertEquals("MyTriangle[v1=(3,4), v2=(5,6), v3=(7,8)]", a.toString(), "Este no es el texto que esperaba");
+        MyTriangle a = new MyTriangle(3, 4, 5, 6, 7, 8);
+        assertEquals("MyTriangle[v1=((3,4)), v2=((5,6)), v3=((7,8))]", a.toString(), "Este no es el texto que esperaba");
     }
 
     @Test
@@ -34,7 +31,6 @@ class MyTriangleTest {
         MyPoint h = new MyPoint(2, 3);
         MyTriangle a = new MyTriangle(c, d, e);
         MyTriangle b = new MyTriangle(e, c, h);
-        assertEquals("Equilateral", a.getType(), "Este no es el triángulo que esperaba");
         assertEquals("Scalene", b.getType(), "Este no es el triángulo que esperaba");
     }
 

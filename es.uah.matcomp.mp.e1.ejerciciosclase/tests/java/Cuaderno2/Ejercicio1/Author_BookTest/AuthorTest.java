@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclase.tests.java.clases.Author_BookTest;
+package Cuaderno2.Ejercicio1.Author_BookTest;
 import Cuaderno2.Ejercicio1.AuthorBook.Author;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -20,6 +20,6 @@ public class AuthorTest {
     @Test
     void testToString(){
         Author a2 = new Author("Avila", "avila@gmail.com");
-        assertEquals(a2.toString(), "Author[name=Avila, email=avila@gmail.com]");
+        assertEquals( "Author[name=Avila,email=avila@gmail.com]",a2.toString());
     }
 }

@@ -31,7 +31,7 @@ public class Circle {
     }
 
     public String toString() {
-        return "Cuaderno1.Ejercicio1.Circle[radious=" + radious + "]";
+        return "Circle[radious=" + radious + "]";
     }
 
 

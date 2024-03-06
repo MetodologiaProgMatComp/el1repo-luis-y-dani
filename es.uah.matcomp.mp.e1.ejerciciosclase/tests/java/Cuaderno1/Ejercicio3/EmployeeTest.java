@@ -50,7 +50,7 @@ class EmployeeTest {
     void raiseSalary() {
         Employee e = new Employee(4, "Dani", "Luque", 1000);
         assertDoesNotThrow(()-> e.raiseSalary(10));
-        assertEquals(100, e.raiseSalary(10), "Este no era el salario que esperaba");
+        assertEquals(1210, e.raiseSalary(10), "Este no era el salario que esperaba");
     }
 
     @org.junit.jupiter.api.Test

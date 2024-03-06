@@ -9,7 +9,7 @@ public class InvoiceItem {
         unitPrice=up;
     }
     public String toString(){
-        return "Cuaderno1.Ejercicio4.InvoiceItem[id="+getId()+", desc="+getDesc()+", qty="+ Qty + ", unitPrice=" + unitPrice+"]";
+        return "InvoiceItem[id="+getId()+",desc="+getDesc()+",qty="+ Qty + ",unitPrice=" + unitPrice+"]";
     }
     public int setQty(int Qty) {
         this.Qty=Qty;

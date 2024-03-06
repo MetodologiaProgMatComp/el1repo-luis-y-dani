@@ -1,4 +1,4 @@
-package clases.claseClientePrueba;
+package Cuaderno2.Ejercicio3.claseClientePrueba;
 
 import Cuaderno2.Ejercicio3.claseClientePrueba.Customer;
 import org.junit.jupiter.api.Test;

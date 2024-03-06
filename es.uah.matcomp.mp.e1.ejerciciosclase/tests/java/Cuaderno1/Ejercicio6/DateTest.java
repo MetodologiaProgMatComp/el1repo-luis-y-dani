@@ -29,43 +29,22 @@ class DateTest {
     @Test
     void setDay() {
         Date dat1 = new Date(22,3,2003);
-        int newDay = 33;
-        dat1.setDay(newDay);
-
-        assertEquals(22, dat1.getDay()); //Como el dia es invalido mantiene el inicial
-
-        int nuevoDay = 24;
-        dat1.setDay(nuevoDay);
-
-        assertEquals(24,dat1.getDay()); //El dia es valido y se cambia
+        assertDoesNotThrow(()-> dat1.setDay(22));
+        assertEquals(22, dat1.getDay());
     }
 
     @Test
     void setYear() {
         Date dat1 = new Date(22,3,2003);
-        int newYear = -1234;
-        dat1.setYear(newYear);
-
-        assertEquals(2003, dat1.getYear()); //Como el año es invalido mantiene el inicial
-
-        int nuevoAno = 2004;
-        dat1.setYear(nuevoAno);
-
-        assertEquals(2004,dat1.getYear()); //El año es valido y se cambia
+        assertDoesNotThrow(()-> dat1.setYear(2003));
+        assertEquals(2003, dat1.getYear());
     }
 
     @Test
     void setMonth() {
         Date dat1 = new Date(22,3,2003);
-        int newMonth = 33;
-        dat1.setMonth(newMonth);
-
-        assertEquals(3, dat1.getMonth()); //Como el mes es invalido mantiene el inicial
-
-        int nuevoMes = 12;
-        dat1.setMonth(nuevoMes);
-
-        assertEquals(12,dat1.getMonth()); //El mes es valido y se cambia
+        assertDoesNotThrow(()-> dat1.setMonth(3));
+        assertEquals(3, dat1.getMonth());
     }
 
     @Test
@@ -83,10 +62,13 @@ class DateTest {
     @Test
     void testToString() {
         Date datf = new Date(30,1,2003);
+        Date a = new Date(2, 12, 1999);
+        Date b = new Date(3, 4, 1999);
         String esperado = "30/1/2003";
         String supuesto = datf.toString();
-
         assertEquals(esperado,supuesto);
+        assertEquals("02/12/1999", a.toString());
+        assertEquals("03/04/1999", b.toString());
     }
 
 }

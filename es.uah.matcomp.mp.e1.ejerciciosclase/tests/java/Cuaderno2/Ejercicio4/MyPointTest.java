@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class MyPointTest {
     @Test
     void getX() {
-        MyPoint s = new MyPoint(3, 4);
-        assertEquals(3, s.getX(), 3);
+        MyPoint s = new MyPoint();
+        assertEquals(0, s.getX(), 0);
     }
 
     @Test
@@ -34,7 +34,9 @@ class MyPointTest {
     @Test
     void getXY() {
         MyPoint s = new MyPoint(3, 4);
-        assertEquals(34, s.getXY(),"Estas no son las coordenadas que esperaba");
+        assertDoesNotThrow(()-> s.getXY());
+        assertEquals(3, s.getX(),"Esta no es la coordenada X que esperaba");
+        assertEquals(4, s.getY(), "Esta no es la coordenada Y que esperaba");
     }
 
     @Test

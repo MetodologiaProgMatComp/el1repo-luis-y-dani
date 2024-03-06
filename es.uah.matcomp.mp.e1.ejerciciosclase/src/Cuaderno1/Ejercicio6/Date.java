@@ -6,7 +6,13 @@ public class Date {
     private int year;
 
     public String toString(){
-        return "0"+day+"/"+"0"+month+"/"+year;
+        if (day<10) {
+            if (month < 10) {
+                return "0" + day + "/" + "0" + month + "/" + year;
+            }
+            return "0" + day + "/" + month + "/" + year;
+        }
+        return day+"/"+month+"/"+year;
     }
 
     public Date(int d, int m, int y) {

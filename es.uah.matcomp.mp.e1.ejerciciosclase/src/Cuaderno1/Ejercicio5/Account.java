@@ -50,7 +50,7 @@ public class Account {
         return balance;
     }
     public String toString() {
-        return "Cuaderno1.Ejercicio5.Account[id="+ id + ",name=" + name + ",balance=" + balance + "]";
+        return "Account[id="+ id + ",name=" + name + ",balance=" + balance + "]";
         }
 }
 

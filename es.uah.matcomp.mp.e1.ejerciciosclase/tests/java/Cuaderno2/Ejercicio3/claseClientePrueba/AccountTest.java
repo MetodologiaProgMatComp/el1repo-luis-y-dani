@@ -1,4 +1,4 @@
-package clases.claseClientePrueba;
+package Cuaderno2.Ejercicio3.claseClientePrueba;
 
 import Cuaderno2.Ejercicio3.claseClientePrueba.Account;
 import Cuaderno2.Ejercicio3.claseClientePrueba.Customer;
@@ -63,7 +63,10 @@ class AccountTest {
     void withdraw() {
         Customer c = new Customer(23, "Dani", 'h');
         Account a = new Account(34, c, 15.5);
+        Account b = new Account(12, c, 54);
         assertDoesNotThrow(()-> a.Withdraw(50));
+        assertDoesNotThrow(()-> b.Withdraw(50));
         assertEquals(-34.5, a.getBalance(), "Este no es el balance que esperaba");
+        assertEquals("Amount withdrawn exceeds the current balance!", b.getBalance(), "Este no es el balance que esperaba");
     }
 }

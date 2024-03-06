@@ -12,10 +12,10 @@ public class Ball {
         y=y1;
         radius=radius1;
         xDelta=xDelta1;
-        yDelta=xDelta1;
+        yDelta=yDelta1;
     }
     public String toString(){
-        return "Cuaderno1.Ejercicio8.Ball [("+x+","+y+"), speed=("+xDelta+","+yDelta+")]";
+        return "Ball [("+x+","+y+"), speed=("+xDelta+","+yDelta+")]";
     }
     public float setX(float x) {
         this.x = x;

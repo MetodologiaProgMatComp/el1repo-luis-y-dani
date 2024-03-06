@@ -1,4 +1,4 @@
-package clases.claseClienteFactura;
+package Cuaderno2.Ejercicio2.claseClienteFactura;
 
 import Cuaderno2.Ejercicio2.claseClienteFactura.Customer;
 import Cuaderno2.Ejercicio2.claseClienteFactura.Invoice;
@@ -19,6 +19,7 @@ class InvoiceTest {
     void getCustomer() {
         Customer a = new Customer(2, "Dani", 4);
         Invoice e = new Invoice(5, a, 4.9);
+        assertDoesNotThrow(()->e.getCustomer());
         assertEquals(2, e.getCustomerId(), "Este no es el ID que esperaba");
         assertEquals("Dani", e.getCustomerName(), "Este no es el nombre que esperaba");
         assertEquals(4, e.getCustomerDiscount(), "Este no es el descuento que esperaba");
