@@ -1,12 +1,11 @@
-package java.clases;
-import Cuaderno2.Ejercicio6.MyCircle;
+package Cuaderno2.Ejercicio6;
+
 import Cuaderno2.Ejercicio4.MyPoint;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class MyCircleTest {
-
     @Test
     void getRadius() {
         MyPoint e = new MyPoint(3, 4);
@@ -18,7 +17,7 @@ class MyCircleTest {
     void setRadius() {
         MyPoint e = new MyPoint(3, 4);
         MyCircle a = new MyCircle(e, 2);
-        assertDoesNotThrow(()-> a.setRadius(2));
+        assertDoesNotThrow(() -> a.setRadius(2));
         assertEquals(2, a.getRadius(), "Estos no son los radianes que esperaba");
     }
 
@@ -33,7 +32,7 @@ class MyCircleTest {
     void setCenter() {
         MyPoint e = new MyPoint(3, 4);
         MyCircle a = new MyCircle(e, 2);
-        assertDoesNotThrow(()-> a.setCenter(e));
+        assertDoesNotThrow(() -> a.setCenter(e));
         assertEquals(e, a.getCenter(), "Este no es el centro que esperaba");
     }
 
@@ -48,7 +47,7 @@ class MyCircleTest {
     void setCenterX() {
         MyPoint e = new MyPoint(3, 4);
         MyCircle a = new MyCircle(e, 2);
-        assertDoesNotThrow(()-> a.setCenterX(3));
+        assertDoesNotThrow(() -> a.setCenterX(3));
         assertEquals(3, a.getCenterX(), "Esta no es la coordenada X del centro que esperaba");
     }
 
@@ -63,7 +62,7 @@ class MyCircleTest {
     void setCenterY() {
         MyPoint e = new MyPoint(3, 4);
         MyCircle a = new MyCircle(e, 2);
-        assertDoesNotThrow(()-> a.setCenterY(4));
+        assertDoesNotThrow(() -> a.setCenterY(4));
         assertEquals(4, a.getCenterY(), "Esta no es la coordenada Y del centro que esperaba");
     }
 
@@ -78,7 +77,7 @@ class MyCircleTest {
     void setCenterXY() {
         MyPoint e = new MyPoint(3, 4);
         MyCircle a = new MyCircle(e, 2);
-        assertDoesNotThrow(()-> a.setCenterXY(3, 4));
+        assertDoesNotThrow(() -> a.setCenterXY(3, 4));
         assertEquals(34, a.getCenterXY(), "Estas no son las coordenadas del centro que esperaba");
     }
 
@@ -108,5 +107,6 @@ class MyCircleTest {
         MyPoint e = new MyPoint(3, 4);
         MyCircle a = new MyCircle(e, 2);
         // terminar
+
     }
 }

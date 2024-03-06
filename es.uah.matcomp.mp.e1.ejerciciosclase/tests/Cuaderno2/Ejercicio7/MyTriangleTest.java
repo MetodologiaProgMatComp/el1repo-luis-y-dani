@@ -1,13 +1,11 @@
-package java.clases;
-import Cuaderno2.Ejercicio7.MyTriangle;
-import Cuaderno2.Ejercicio4.MyPoint;
+package Cuaderno2.Ejercicio7;
 
+import Cuaderno2.Ejercicio4.MyPoint;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class MyTriangleTest {
-
     @Test
     void testToString() {
         MyPoint c = new MyPoint(3,4);
@@ -39,4 +37,5 @@ class MyTriangleTest {
         assertEquals("Equilateral", a.getType(), "Este no es el triángulo que esperaba");
         assertEquals("Scalene", b.getType(), "Este no es el triángulo que esperaba");
     }
+
 }

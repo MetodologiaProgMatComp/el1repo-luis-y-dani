@@ -1,11 +1,10 @@
-package java.clases;
-import Cuaderno2.Ejercicio4.MyPoint;
+package Cuaderno2.Ejercicio4;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class MyPointTest {
-
     @Test
     void getX() {
         MyPoint s = new MyPoint(3, 4);
@@ -72,4 +71,5 @@ class MyPointTest {
         assertDoesNotThrow(()-> s.setXY(3, 4));
         assertEquals(5, s.distance(), "Esta no era la distancia que esperaba encontrar");
     }
+
 }
