@@ -1,4 +1,4 @@
-package clases.person_y_subclases;
+package Cuaderno3.Ejercicio2.person_y_subclases;
 
 import Cuaderno3.Ejercicio2.person_y_subclases.Person;
 import org.junit.jupiter.api.Test;
@@ -29,6 +29,6 @@ class PersonTest {
     @Test
     void testToString() {
         Person a = new Person("Dani", "Calle ujsdfs");
-        assertEquals("Person[name=Dani, address=Calle ujsdfs]", a.toString(), "Este no es el texto que esperaba");
+        assertEquals("Person[name=Dani,address=Calle ujsdfs]", a.toString(), "Este no es el texto que esperaba");
     }
 }

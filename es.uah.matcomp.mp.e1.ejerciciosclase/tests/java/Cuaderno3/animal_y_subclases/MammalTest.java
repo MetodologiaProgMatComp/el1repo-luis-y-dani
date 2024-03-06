@@ -1,4 +1,4 @@
-package clases.animal_y_subclases;
+package Cuaderno3.animal_y_subclases;
 
 import Cuaderno3.Ejercicio6.animal_y_subclases.Mammal;
 import org.junit.jupiter.api.Test;
