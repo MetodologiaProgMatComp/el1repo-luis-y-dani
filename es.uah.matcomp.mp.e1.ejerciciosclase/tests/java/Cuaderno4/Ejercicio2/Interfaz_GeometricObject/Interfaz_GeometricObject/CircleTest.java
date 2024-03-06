@@ -1,6 +1,6 @@
-package Cuaderno4.Ejercicio2.Interfaz_GeometricObject;
+package Cuaderno4.Ejercicio2.Interfaz_GeometricObject.Interfaz_GeometricObject;
 
-import Cuaderno4.Circle;
+import Cuaderno4.Ejercicio2.Interfaz_GeometricObject.Circle;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

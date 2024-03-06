@@ -1,6 +1,6 @@
-package Cuaderno4;
+package Cuaderno4.Ejercicio2.Interfaz_GeometricObject;
 
-public class Rectangle implements GeometricObject{
+public class Rectangle implements GeometricObject {
     private double width;
     private double length;
 

@@ -1,6 +1,6 @@
-package Cuaderno4;
+package Cuaderno4.Ejercicio2.Interfaz_GeometricObject;
 
-public class Circle implements  GeometricObject{
+public class Circle implements GeometricObject {
     private double radius;
 
     public Circle(double radius) {
