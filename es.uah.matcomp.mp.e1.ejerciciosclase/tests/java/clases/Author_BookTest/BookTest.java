@@ -1,9 +1,7 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.tests.java.clases.Author_BookTest;
-import clases.AuthorBook.Author;
-import clases.AuthorBook.Book;
+import Cuaderno2.Ejercicio1.AuthorBook.Author;
+import Cuaderno2.Ejercicio1.AuthorBook.Book;
 import org.junit.jupiter.api.Test;
-
-import javax.annotation.processing.SupportedAnnotationTypes;
 
 import static org.junit.jupiter.api.Assertions.*;
 

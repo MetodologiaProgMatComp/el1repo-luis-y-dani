@@ -1,7 +1,5 @@
 package java.clases;
-import clases.Employee;
-
-import org.junit.jupiter.api.Test;
+import Cuaderno1.Ejercicio3.Employee;
 
 import static org.junit.jupiter.api.Assertions.*;
 

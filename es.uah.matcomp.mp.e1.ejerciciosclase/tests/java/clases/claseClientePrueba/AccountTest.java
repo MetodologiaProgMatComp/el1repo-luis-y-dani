@@ -1,5 +1,7 @@
 package clases.claseClientePrueba;
 
+import Cuaderno2.Ejercicio3.claseClientePrueba.Account;
+import Cuaderno2.Ejercicio3.claseClientePrueba.Customer;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

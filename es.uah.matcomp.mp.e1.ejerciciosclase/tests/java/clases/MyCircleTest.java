@@ -1,6 +1,6 @@
 package java.clases;
-import clases.MyCircle;
-import clases.MyPoint;
+import Cuaderno2.Ejercicio6.MyCircle;
+import Cuaderno2.Ejercicio4.MyPoint;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

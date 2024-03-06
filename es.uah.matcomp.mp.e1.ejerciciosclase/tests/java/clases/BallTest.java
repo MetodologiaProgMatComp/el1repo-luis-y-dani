@@ -1,5 +1,5 @@
 package java.clases;
-import clases.Ball;
+import Cuaderno1.Ejercicio8.Ball;
 
 import org.junit.jupiter.api.Test;
 

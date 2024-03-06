@@ -1,7 +1,6 @@
 package java.clases;
 
-import org.junit.jupiter.api.Test;
-import clases.Circle;
+import Cuaderno1.Ejercicio1.Circle;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CircleTest {

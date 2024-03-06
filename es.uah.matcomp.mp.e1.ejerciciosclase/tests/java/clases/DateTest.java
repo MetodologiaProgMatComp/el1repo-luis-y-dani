@@ -1,5 +1,5 @@
 package java.clases;
-import clases.Date;
+import Cuaderno1.Ejercicio6.Date;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

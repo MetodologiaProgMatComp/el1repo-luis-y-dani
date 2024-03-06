@@ -1,5 +1,6 @@
 package clases.point_y_movablepoint;
 
+import Cuaderno3.Ejercicio4.point_y_movablepoint.Point;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

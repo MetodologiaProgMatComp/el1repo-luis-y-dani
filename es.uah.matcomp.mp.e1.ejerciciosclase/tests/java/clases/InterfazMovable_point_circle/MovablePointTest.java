@@ -1,6 +1,6 @@
 package clases.InterfazMovable_point_circle;
 
-import clases.Interfaz_GeometricObject.Rectangle;
+import Cuaderno4.Ejercicio4.InterfazMovable_point_circle.MovablePoint;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,6 +1,6 @@
 package clases.claseClienteFactura;
 
-import org.junit.jupiter.api.Test;
+import Cuaderno2.Ejercicio2.claseClienteFactura.Customer;
 
 import static org.junit.jupiter.api.Assertions.*;
 

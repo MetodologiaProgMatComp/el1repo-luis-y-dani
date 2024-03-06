@@ -1,5 +1,6 @@
 package clases.Interfaz_GeometricObject;
 
+import Cuaderno4.Ejercicio2.Interfaz_GeometricObject.Rectangle;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

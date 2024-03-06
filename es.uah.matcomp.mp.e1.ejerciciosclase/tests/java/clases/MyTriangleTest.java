@@ -1,6 +1,6 @@
 package java.clases;
-import clases.MyTriangle;
-import clases.MyPoint;
+import Cuaderno2.Ejercicio7.MyTriangle;
+import Cuaderno2.Ejercicio4.MyPoint;
 
 import org.junit.jupiter.api.Test;
 
@@ -19,11 +19,13 @@ class MyTriangleTest {
 
     @Test
     void getPerimeter() {
-        MyPoint c = new MyPoint(3,4);
-        MyPoint d = new MyPoint(5, 6);
-        MyPoint e = new MyPoint(7,8);
+        MyPoint c = new MyPoint(1,1);
+        MyPoint d = new MyPoint(7, 1);
+        MyPoint e = new MyPoint(5,5);
+        MyPoint h = new MyPoint(2, 3);
         MyTriangle a = new MyTriangle(c, d, e);
-        assertEquals(, a.getPerimeter(),);
+        MyTriangle b = new MyTriangle(e, c, h);
+        assertEquals(23, a.getPerimeter(),23);
     }
 
     @Test
@@ -31,6 +33,10 @@ class MyTriangleTest {
         MyPoint c = new MyPoint(3,4);
         MyPoint d = new MyPoint(5, 6);
         MyPoint e = new MyPoint(7,8);
+        MyPoint h = new MyPoint(2, 3);
         MyTriangle a = new MyTriangle(c, d, e);
+        MyTriangle b = new MyTriangle(e, c, h);
+        assertEquals("Equilateral", a.getType(), "Este no es el triángulo que esperaba");
+        assertEquals("Scalene", b.getType(), "Este no es el triángulo que esperaba");
     }
 }

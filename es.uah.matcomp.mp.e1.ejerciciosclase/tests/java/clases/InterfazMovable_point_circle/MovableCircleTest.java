@@ -1,5 +1,6 @@
 package clases.InterfazMovable_point_circle;
 
+import Cuaderno4.Ejercicio4.InterfazMovable_point_circle.MovableCircle;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

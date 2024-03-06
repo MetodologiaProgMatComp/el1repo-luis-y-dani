@@ -1,5 +1,6 @@
 package clases.animal_y_subclases;
 
+import Cuaderno3.Ejercicio6.animal_y_subclases.Animal;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,5 +1,6 @@
 package clases.person_y_subclases;
 
+import Cuaderno3.Ejercicio2.person_y_subclases.Student;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

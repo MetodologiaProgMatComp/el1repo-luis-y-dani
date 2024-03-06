@@ -1,6 +1,6 @@
 
 package java.clases;
-import clases.Rectangle;
+import Cuaderno1.Ejercicio2.Rectangle;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
