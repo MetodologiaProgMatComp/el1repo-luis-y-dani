@@ -1,4 +1,6 @@
-package clases;
+package java.clases;
+import clases.MyTriangle;
+import clases.MyPoint;
 
 import org.junit.jupiter.api.Test;
 
@@ -21,7 +23,7 @@ class MyTriangleTest {
         MyPoint d = new MyPoint(5, 6);
         MyPoint e = new MyPoint(7,8);
         MyTriangle a = new MyTriangle(c, d, e);
-        assertEquals(, a.getPerimeter(), );
+        assertEquals(, a.getPerimeter(),);
     }
 
     @Test

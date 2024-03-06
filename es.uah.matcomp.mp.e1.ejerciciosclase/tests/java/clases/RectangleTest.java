@@ -1,5 +1,7 @@
-package es.uah.matcomp.mp.e1.ejerciciosclase.tests.java.clases;
-import es.uah.matcomp.mp.e1.ejerciciosclase.src.clases.SuperclaseAbstractaShape.Rectangle;
+
+package java.clases;
+import clases.Rectangle;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 public class RectangleTest {
