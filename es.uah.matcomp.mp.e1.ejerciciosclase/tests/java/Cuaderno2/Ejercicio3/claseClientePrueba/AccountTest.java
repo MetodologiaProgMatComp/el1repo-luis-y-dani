@@ -67,6 +67,6 @@ class AccountTest {
         assertDoesNotThrow(()-> a.Withdraw(50));
         assertDoesNotThrow(()-> b.Withdraw(50));
         assertEquals(-34.5, a.getBalance(), "Este no es el balance que esperaba");
-        assertEquals("Amount withdrawn exceeds the current balance!", b.getBalance(), "Este no es el balance que esperaba");
+        assertEquals(54.0, b.getBalance(), "Este no es el balance que esperaba");
     }
 }

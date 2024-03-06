@@ -45,6 +45,7 @@ class InvoiceItemTest {
         double b = a.getTotal();
         assertEquals(2.0, b);
     }
+    @Test
     void testToString(){
         InvoiceItem a = new InvoiceItem("A101", "Pen Red", 10, 2.0);
         assertEquals("InvoiceItem[id=A101,desc=Pen Red,qty=10,unitPrice=2.0]", a.toString());
