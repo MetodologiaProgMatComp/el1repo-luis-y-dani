@@ -1,4 +1,5 @@
-package clases;
+package java.clases;
+import clases.Ball;
 
 import org.junit.jupiter.api.Test;
 

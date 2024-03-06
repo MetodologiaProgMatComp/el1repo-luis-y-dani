@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.src;
 
-import clases.Circle
+import clases.Circle;
 import es.uah.matcomp.mp.e1.ejerciciosclase.src.clases.Circle_Cylinder.Cylinder;
 
 public class MainCylinder {

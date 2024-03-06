@@ -1,5 +1,5 @@
-package clases;
-
+package java.clases;
+import clases.Time;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
