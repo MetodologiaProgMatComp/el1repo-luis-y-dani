@@ -1,11 +1,10 @@
-package java.clases;
-import Cuaderno1.Ejercicio6.Date;
+package Cuaderno1.Ejercicio6;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class DateTest {
-
     @Test
     void getDay() {
         Date dat1 = new Date(22,3,2003);
@@ -89,4 +88,5 @@ class DateTest {
 
         assertEquals(esperado,supuesto);
     }
+
 }

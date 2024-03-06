@@ -1,12 +1,10 @@
-package java.clases;
-import Cuaderno1.Ejercicio5.Account;
+package Cuaderno1.Ejercicio5;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class AccountTest {
-
     @Test
     void getID() {
         Account e = new Account("7346", "Dani", 65);
@@ -53,4 +51,5 @@ class AccountTest {
         Account e = new Account("7346", "Dani", 65);
         assertEquals("Account[id=7346,name=Dani,balance=65]", e.toString(), "Este no es el mensaje que debía aparecer");
     }
+
 }

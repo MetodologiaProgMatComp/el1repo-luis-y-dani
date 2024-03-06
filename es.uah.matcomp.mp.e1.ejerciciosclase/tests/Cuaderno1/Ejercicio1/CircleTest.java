@@ -1,10 +1,8 @@
-package java.clases;
+package Cuaderno1.Ejercicio1;
 
-import Cuaderno1.Ejercicio1.Circle;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CircleTest {
-
     @org.junit.jupiter.api.Test
     void getRadius() {
         Circle j = new Circle(1.1);
@@ -35,4 +33,5 @@ class CircleTest {
         Circle j = new Circle();
         assertEquals("Circle[radious=1.0]", j.toString(), "Este no era el mensaje esperado");
     }
+
 }

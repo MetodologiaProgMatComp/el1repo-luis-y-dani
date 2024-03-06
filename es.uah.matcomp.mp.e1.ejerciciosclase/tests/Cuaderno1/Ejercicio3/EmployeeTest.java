@@ -1,10 +1,8 @@
-package java.clases;
-import Cuaderno1.Ejercicio3.Employee;
+package Cuaderno1.Ejercicio3;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class EmployeeTest {
-
     @org.junit.jupiter.api.Test
     void getId() {
         Employee e = new Employee(4, "Dani", "Luque", 1000);
@@ -60,4 +58,5 @@ class EmployeeTest {
         Employee e = new Employee(4, "Dani", "Luque", 1000);
         assertEquals("Employee[id=4,name=Dani Luque,salary=1000]", e.toString(), "Esto no era el strign que esperaba");
     }
+
 }

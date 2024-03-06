@@ -1,5 +1,5 @@
-package java.clases;
-import Cuaderno1.Ejercicio4.InvoiceItem;
+package Cuaderno1.Ejercicio4;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -49,8 +49,5 @@ class InvoiceItemTest {
         InvoiceItem a = new InvoiceItem("B000", "penBlue", 1, 2);
         assertEquals("InvoiceItem[ID=B000, desc=penBlue, qty=1, unitPrice=2]", a.toString());
     }
+
 }
-
-
-
-

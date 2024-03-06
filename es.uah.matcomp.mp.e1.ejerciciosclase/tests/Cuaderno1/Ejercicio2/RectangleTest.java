@@ -1,10 +1,10 @@
-
-package java.clases;
-import Cuaderno1.Ejercicio2.Rectangle;
+package Cuaderno1.Ejercicio2;
 
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
-public class RectangleTest {
+
+class RectangleTest {
     @Test
     void getWidth(){
         Rectangle rectangle = new Rectangle();
@@ -53,6 +53,5 @@ public class RectangleTest {
         Rectangle rectangle = new Rectangle(5.0f, 10.0f);
         assertEquals("Rectangle[width = 5.0, length=10.0]", rectangle.toString());
     }
-
 
 }

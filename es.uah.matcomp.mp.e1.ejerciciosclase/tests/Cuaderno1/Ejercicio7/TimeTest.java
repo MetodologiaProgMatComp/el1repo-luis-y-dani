@@ -1,10 +1,8 @@
-package java.clases;
-import Cuaderno1.Ejercicio7.Time;
+package Cuaderno1.Ejercicio7;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class TimeTest {
-
     @org.junit.jupiter.api.Test
     void getHour() {
         Time a = new Time(04, 04, 04);
@@ -87,4 +85,5 @@ class TimeTest {
         assertDoesNotThrow(() -> d.previousSecond());
         assertEquals("23:59:58", d.previousSecond().toString(), "No es el segundo esperado");
     }
+
 }
