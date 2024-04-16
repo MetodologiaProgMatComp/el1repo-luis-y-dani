@@ -13,7 +13,11 @@ public class Circle {
     public Circle(double radious) {
         this.radious = radious;
     }
-
+    public Circle(double radious, double area, double circumference) {
+        this.radious = radious;
+        area = this.getArea();
+        circumference = this.getCircumference();
+    }
     public double getRadius() {
         return radious;
     }

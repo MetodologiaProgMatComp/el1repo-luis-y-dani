@@ -1,6 +1,5 @@
 package Cuaderno1.Ejercicio2;
 
-import Cuaderno1.Ejercicio2.Rectangle;
 public class MainRectangle {
     public static void main(String[] args) {
         // Test constructors and toString()
